@@ -55,7 +55,7 @@ export default class Main extends Component {
     const { navigation } = this.props;
 
     navigation.navigate('User', { user });
-  }
+  };
 
   handleAddUser = async () => {
     const { users, newUser } = this.state;
