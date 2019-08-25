@@ -11,4 +11,5 @@ no localStorage do device e permite que sejam visualizados seus repositórios fa
 
 2- Para instalar/rodar a aplicação:
 > react-native run-android
+
 > react-native start
