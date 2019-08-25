@@ -48,7 +48,7 @@ export default class User extends Component {
     const response = await api.get(`users/${user.login}/starred`, {
       params: {
         page,
-        per_page: 20,
+        per_page: 15,
       },
     });
 
@@ -64,7 +64,7 @@ export default class User extends Component {
     const response = await api.get(`users/${user.login}/starred`, {
       params: {
         page,
-        per_page: 20,
+        per_page: 15,
       },
     });
 
@@ -82,7 +82,7 @@ export default class User extends Component {
     const response = await api.get(`users/${user.login}/starred`, {
       params: {
         page: 1,
-        per_page: 20,
+        per_page: 15,
       },
     });
 
@@ -117,7 +117,7 @@ export default class User extends Component {
         refreshing={refreshing}
         keyExtractor={star => String(star.id)}
         onEndReachedThreshold={0.2} // Carrega mais itens quando chegar em 20% do fim
-        onEndReached={() => (stars.size >= 15 && this.loadMore(page + 1)) }
+        onEndReached={() => (stars.length >= 15 &&this.loadMore(page + 1)) }
         renderItem={({ item }) => (
           <Starred>
             <OwnerAvatar source={{ uri: item.owner.avatar_url }} />
