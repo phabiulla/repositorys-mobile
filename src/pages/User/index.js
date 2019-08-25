@@ -61,8 +61,6 @@ export default class User extends Component {
   loadMore = async page => {
     const { user, stars } = this.state;
 
-    this.setState({ loading: true, user });
-
     const response = await api.get(`users/${user.login}/starred`, {
       params: {
         page,
@@ -72,7 +70,6 @@ export default class User extends Component {
 
     this.setState({
       stars: [...stars, ...response.data],
-      loading: false,
       page,
     });
   };
