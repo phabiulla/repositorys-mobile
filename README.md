@@ -1,4 +1,5 @@
-# Listagem de Usuários do GitHub e seus repositórios favoritos
+# Listagem de Usuários do GitHub e
+# seus repositórios favoritos
 
 Projeto desenvolvido em ReactNative, que possibilita o cadastrado de usuários do Github 
 no localStorage do device e permite que sejam visualizados seus repositórios favoritos
