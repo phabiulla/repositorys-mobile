@@ -25,9 +25,9 @@ export default class Main extends Component {
 
   static propTypes = {
     navigation: PropTypes.shape({
-      navigate: PropTypes.func
+      navigate: PropTypes.func,
     }).isRequired,
-  }
+  };
 
   state = {
     newUser: '',
@@ -55,7 +55,7 @@ export default class Main extends Component {
     const { navigation } = this.props;
 
     navigation.navigate('User', { user });
-  }
+  };
 
   handleAddUser = async () => {
     const { users, newUser } = this.state;
@@ -85,15 +85,15 @@ export default class Main extends Component {
     return (
       <Container>
         <Form>
-
           <Input
-          autoCorrect={false}
-          autoCaptalize="none"
-          value={newUser}
-          onChangeText={text => this.setState({ newUser: text })}
-          placeholder="Adicionar nome"
-          returnKeyType="send"
-          onSubmitEditing={this.handleAddUser} />
+            autoCorrect={false}
+            autoCaptalize="none"
+            value={newUser}
+            onChangeText={text => this.setState({ newUser: text })}
+            placeholder="Adicionar nome"
+            returnKeyType="send"
+            onSubmitEditing={this.handleAddUser}
+          />
 
           <SubmitButton loading={loading} onPress={this.handleAddUser}>
             {loading ? (
@@ -102,23 +102,23 @@ export default class Main extends Component {
               <Icon name="add" size={20} color="#FFF" />
             )}
           </SubmitButton>
-
         </Form>
 
-        <List data={users} keyExtractor={user => user.login}
-        renderItem={ ({ item }) => (
-          <User>
-            <Avatar source={{uri: item.avatar}} />
-            <Name>{item.name}</Name>
-            <Bio>{item.bio}</Bio>
+        <List
+          data={users}
+          keyExtractor={user => user.login}
+          renderItem={({ item }) => (
+            <User>
+              <Avatar source={{ uri: item.avatar }} />
+              <Name>{item.name}</Name>
+              <Bio>{item.bio}</Bio>
 
-            <ProfileButton onPress={() => this.handleNavigate(item)}>
-              <ProfileButtonText>
-                Ver perfil
-              </ProfileButtonText>
-            </ProfileButton>
-          </User>
-        )} />
+              <ProfileButton onPress={() => this.handleNavigate(item)}>
+                <ProfileButtonText>Ver perfil</ProfileButtonText>
+              </ProfileButton>
+            </User>
+          )}
+        />
       </Container>
     );
   }
