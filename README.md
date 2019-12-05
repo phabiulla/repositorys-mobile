@@ -1,8 +1,18 @@
-# Listagem de Usuários do GitHub e seus repositórios favoritos
+<h1 align="center">
+    Repositorys (MOBILE)
+</h1>
 
-Projeto desenvolvido em ReactNative, que possibilita o cadastrado de usuários do Github 
-no localStorage do device e permite que sejam visualizados seus repositórios favoritos
-(com paginação), a partir da comunicação com a API pública do Github.
+<h4 align="center">
+  ☕ Code and coffee
+</h4>
+
+<p align="center">
+  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-configuracao">Configuração</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+<br>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/22889383/64164908-f1679300-ce3b-11e9-8814-298405c4680e.PNG" width="200">
@@ -11,7 +21,17 @@ no localStorage do device e permite que sejam visualizados seus repositórios fa
   <img src="https://user-images.githubusercontent.com/22889383/64164912-f1679300-ce3b-11e9-947f-f701448a88e2.PNG" width="200">
 </p>
 
-# Clone
+## :rocket: Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [React Native](https://facebook.github.io/react-native/)
+
+## 💻 Projeto
+
+Repositorys é um projeto desenvolvido em ReactNative, que possibilita o cadastrado de usuários do Github no localStorage do device e permite que sejam visualizados seus repositórios favoritos (com paginação), a partir da comunicação com a API pública do Github.
+
+## ⚙ Configuração
 
 1- Para instalar as dependências:
 > yarn
@@ -20,3 +40,8 @@ no localStorage do device e permite que sejam visualizados seus repositórios fa
 > react-native run-android
 
 > react-native start
+
+---
+
+Feito com ♥ by Phabíulla Nascimento :wave:
+
